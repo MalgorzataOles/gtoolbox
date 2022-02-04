@@ -1,0 +1,36 @@
+---
+title: ""
+author: "Małgorzata Oleś"
+date: "`r Sys.Date()`"
+output: 
+  BiocStyle::html_document
+---
+
+```{r, message=FALSE}
+options(stringsAsFactors=FALSE)
+# setwd("")
+
+# load libraries
+
+# create output directory
+outDir = "YYMMDD_output/"
+# if(!file.exists(outDir)) dir.create(outDir)
+```
+
+
+## Introduction
+
+
+
+
+```{r plot, fig.path=outDir, dev=c("png", "pdf"), fig.width=3, fig.height=3}
+plot(1:4, 4:1)
+```
+
+
+---
+
+End of session.
+```{r}
+devtools::session_info()
+```
